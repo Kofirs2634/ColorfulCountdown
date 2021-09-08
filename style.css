@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
+:root {
+	--primary: #03BCFA
+}
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'Azeret Mono', monospace
+}
+.box {
+	width: 600px;
+	height: 600px;
+	display: grid;
+	place-items: center;
+	position: relative
+}
+.ring {
+	--progress: 1turn;
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	box-sizing: border-box;
+	background: conic-gradient(var(--primary) 0turn var(--progress), #0000 var(--progress) 1turn);
+	background-color: #EEE;
+	box-shadow: 0 0 10px #000 inset;
+	border-radius: 50%;
+	z-index: -1
+}
+.count {
+	width: 540px;
+	height: 540px;
+	display: grid;
+	place-items: center;
+	font-size: 100px;
+	background: #FFF;
+	border-radius: 50%;
+	box-shadow: 0 0 10px #000;
+	color: var(--primary);
+	text-shadow: 0 0 10px #0006
+}
